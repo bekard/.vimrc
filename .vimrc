@@ -4,6 +4,8 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'scrooloose/syntastic'
+Plug 'wincent/command-t'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " PLUGIN SETTINGS 
@@ -22,12 +24,15 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" hotkey for Goyo-mode
+map <F12> :Goyo \| set linebreak<CR>
+
 " END
 
 " MY SETTINGS FOR VIM
 
 set number
-set lines=40 columns=120
+set lines=35 columns=120
 syntax enable
 
 "The width of a TAB is set to 4
