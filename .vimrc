@@ -6,12 +6,13 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'scrooloose/syntastic'
 Plug 'wincent/command-t'
 Plug 'junegunn/goyo.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " PLUGIN SETTINGS 
-
 " seoul256
-let g:seoul256_background = 234
+let g:seoul256_background = 254
 colo seoul256
 
 " syntastic
@@ -27,10 +28,11 @@ let g:syntastic_check_on_wq = 0
 " hotkey for Goyo-mode
 map <F12> :Goyo \| set linebreak<CR>
 
+" vim-airline
+let g:airline_theme='bubblegum'
 " END
 
 " MY SETTINGS FOR VIM
-
 set number
 set lines=35 columns=120
 syntax enable
@@ -39,5 +41,4 @@ syntax enable
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-
 " END
